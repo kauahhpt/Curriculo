@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Portefólio de Kauã Hipólito, estudante finalista de Programação em Sintra, com foco em C#, ASPX, HTML, CSS, SQL Server e desenvolvimento web."
+  >
+  <title>Kauã Hipólito | Portefólio e CV ATS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-html" viewBox="0 0 64 64">
+      <path d="M11 8h42l-4 44-17 5-17-5z" fill="#F16529"></path>
+      <path d="M32 53V12h17l-3 37z" fill="#F58E56"></path>
+      <path d="M21 20h22l-.6 6H27.4l.5 5h13.9l-1.5 14-8.8 2.7-8.5-2.7-.6-8h6.2l.3 3 2.7.8 2.9-.8.4-4.7H22.2L20.9 20z" fill="#fff"></path>
+    </symbol>
+    <symbol id="icon-js" viewBox="0 0 64 64">
+      <rect x="8" y="8" width="48" height="48" rx="12" fill="#F5C84C"></rect>
+      <path d="M26.2 42.9c1.1 1.8 2.8 3.1 5.8 3.1 2.4 0 4-1.2 4-2.9 0-2-1.6-2.7-4.2-3.9l-1.4-.6c-4.2-1.8-7-4.1-7-8.8 0-4.4 3.3-7.8 8.6-7.8 3.7 0 6.4 1.3 8.4 4.7l-4.6 3c-1-1.8-2.1-2.6-3.8-2.6s-2.8 1.1-2.8 2.6c0 1.8 1.1 2.5 3.7 3.6l1.4.6c4.9 2.1 7.7 4.3 7.7 9.2 0 5.2-4.1 8.1-9.6 8.1-5.4 0-8.9-2.6-10.6-6l4.8-2.8z" fill="#181818"></path>
+    </symbol>
+    <symbol id="icon-csharp" viewBox="0 0 64 64">
+      <path d="M32 6 52 17.5v29L32 58 12 46.5v-29z" fill="#4A8FE7"></path>
+      <path d="M31.8 19c4 0 6.8 1.4 8.9 3.9l-4.1 3.8c-1.3-1.4-2.6-2.2-4.7-2.2-3.6 0-6.1 2.9-6.1 7.3 0 4.5 2.5 7.4 6.1 7.4 2.2 0 3.6-.9 5.1-2.5l4.1 3.7c-2.3 2.8-5.1 4.4-9.5 4.4-7 0-12.3-5-12.3-12.9S24.7 19 31.8 19zm9.5 9.7h2.8v-2.8h2.2v2.8h2.8v2.2h-2.8v2.8h-2.2v-2.8h-2.8zm0 6h2.8v-2.8h2.2v2.8h2.8v2.2h-2.8v2.8h-2.2v-2.8h-2.8z" fill="#fff"></path>
+    </symbol>
+    <symbol id="icon-aspnet" viewBox="0 0 64 64">
+      <rect x="8" y="12" width="48" height="40" rx="12" fill="#17365D"></rect>
+      <path d="M18 25.5 24.8 20h5.7l-8.2 6.6 8.2 6.8h-5.8L18 27.8zm19.6-5.5h6l5.8 13.4 5.8-13.4H46l-9 20h-6.3l6.9-14.4z" fill="#7DD3FC"></path>
+      <path d="M40.7 43.5h5.8M18 43.5h17" stroke="#7DD3FC" stroke-width="3" stroke-linecap="round"></path>
+    </symbol>
+    <symbol id="icon-sql" viewBox="0 0 64 64">
+      <ellipse cx="32" cy="18" rx="17" ry="7" fill="#D6A65D"></ellipse>
+      <path d="M15 18v26c0 3.9 7.6 7 17 7s17-3.1 17-7V18" fill="#9C6B2F"></path>
+      <path d="M15 30c0 3.9 7.6 7 17 7s17-3.1 17-7M15 41c0 3.9 7.6 7 17 7s17-3.1 17-7" fill="none" stroke="#F5D7A6" stroke-width="2.8"></path>
+      <path d="M21 18c0 2.5 5 4.5 11 4.5S43 20.5 43 18" fill="none" stroke="#F8E7C2" stroke-width="2"></path>
+    </symbol>
+    <symbol id="icon-logic" viewBox="0 0 64 64">
+      <circle cx="18" cy="18" r="6" fill="#78D2C5"></circle>
+      <circle cx="46" cy="18" r="6" fill="#78D2C5"></circle>
+      <circle cx="32" cy="46" r="8" fill="#D6A65D"></circle>
+      <path d="M23.5 21.5 28 27m12-5.5L36 27m-4 11v-6" stroke="#E7EEF8" stroke-width="3" stroke-linecap="round"></path>
+    </symbol>
+  </svg>
+
+  <div class="ambient-noise" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress__bar"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="shell header-shell">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand-mark">K</span>
+        <span class="brand-text">Kauã Hipólito</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#processo">Processo</a>
+        <a href="cv-ats.html">CV ATS</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="shell hero-shell">
+        <div class="hero-copy">
+          <span class="eyebrow">Estudante finalista de Programação | Odivelas, Portugal</span>
+          <h1>
+            Desenvolvimento web
+            <span>lógica em C# e bases de dados</span>
+          </h1>
+          <p class="hero-description">
+            Sou o Kauã Hipólito, aluno finalista do curso de Programação, com experiência prática
+            em desenvolvimento full-stack através de projectos académicos e estágio curricular.
+            Trabalho com C#, ASPX, HTML, CSS, SQL Server, Git e GitHub, com interesse especial
+            em oportunidades de estágio na área das Tecnologias de Informação.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="cv-ats.html">Abrir CV ATS</a>
+            <a class="button button-secondary" href="#contacto">Ver contactos</a>
+          </div>
+
+          <div class="hero-metrics">
+            <article class="metric-card interactive-card" data-spotlight>
+              <strong>Desenvolvimento web</strong>
+              <span>HTML, CSS, ASPX e interfaces estruturadas para projectos académicos e internos.</span>
+            </article>
+            <article class="metric-card interactive-card" data-spotlight>
+              <strong>Lógica com C#</strong>
+              <span>Implementação de funcionalidades, regras de negócio e integração entre camadas.</span>
+            </article>
+            <article class="metric-card interactive-card" data-spotlight>
+              <strong>SQL Server</strong>
+              <span>Estruturação de bases de dados, consultas e apoio à modelação da informação.</span>
+            </article>
+          </div>
+
+          <div class="hero-contact-list">
+            <a href="mailto:auahipolitoipolito@gmail.com">auahipolitoipolito@gmail.com</a>
+            <a href="tel:+351935686304">+351 935 686 304</a>
+            <a href="https://github.com/kauahhpt" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-halo hero-halo--one" data-depth="6"></div>
+          <div class="hero-halo hero-halo--two" data-depth="12"></div>
+
+          <article class="hero-panel interactive-card" data-spotlight>
+            <div class="panel-top">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="panel-content">
+              <div class="panel-copy">
+                <p class="panel-label">Perfil técnico</p>
+                <h2>Base sólida para crescer em equipas de desenvolvimento e projectos reais.</h2>
+                <p>
+                  Este portefólio mostra uma base técnica centrada em desenvolvimento web,
+                  lógica de aplicação e bases de dados, com apresentação organizada e leitura rápida.
+                </p>
+              </div>
+
+              <div class="stack-preview">
+                <span>HTML5</span>
+                <span>JavaScript</span>
+                <span>C#</span>
+                <span>SQL</span>
+                <span>ASP.NET</span>
+              </div>
+
+              <div class="code-lines" aria-hidden="true">
+                <span class="line line-long"></span>
+                <span class="line line-medium"></span>
+                <span class="line line-short"></span>
+                <span class="line line-medium accent-line"></span>
+              </div>
+            </div>
+
+            <article class="floating-card floating-card--top" data-depth="18">
+              <span class="floating-label">Experiência</span>
+              <strong>Estágio curricular</strong>
+              <p>Contacto com manutenção de software, testes, debugging e integração de sistemas.</p>
+            </article>
+
+            <article class="floating-card floating-card--bottom" data-depth="10">
+              <span class="floating-label">Objectivo</span>
+              <strong>Entrada no mercado</strong>
+              <p>Procura de oportunidade para aplicar conhecimentos em ambiente profissional.</p>
+            </article>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="sobre">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-label">Perfil</span>
+          <h2>Um portefólio visual para recrutadores e uma base de conteúdo real para apresentar competências.</h2>
+        </div>
+
+        <div class="intro-grid">
+          <article class="intro-card intro-card--lead interactive-card" data-spotlight data-reveal="up">
+            <p>
+              Estudante finalista do curso de Programação, com experiência prática em aplicações web
+              full-stack e sistemas de bases de dados, adquirida em projectos académicos e estágio curricular.
+            </p>
+          </article>
+
+          <article class="intro-card interactive-card" data-spotlight data-reveal="up">
+            <div class="intro-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <use href="#icon-logic"></use>
+              </svg>
+            </div>
+            <h3>Capacidade de aprendizagem</h3>
+            <p>Facilidade de adaptação, pensamento crítico e vontade de evoluir tecnicamente.</p>
+          </article>
+
+          <article class="intro-card interactive-card" data-spotlight data-reveal="up">
+            <div class="intro-icon">
+              <svg viewBox="0 0 64 64" aria-hidden="true">
+                <use href="#icon-aspnet"></use>
+              </svg>
+            </div>
+            <h3>Experiência prática</h3>
+            <p>Implementação de funcionalidades com C#, ASPX, HTML/CSS, SQL Server e trabalho em equipa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact">
+      <div class="shell">
+        <div class="impact-grid">
+          <article class="impact-card interactive-card" data-spotlight data-reveal="up">
+            <span class="impact-label">Tecnologias centrais</span>
+            <strong class="impact-number" data-counter="5" data-pad="2">00</strong>
+            <p>C#, ASPX, HTML, CSS e SQL Server como base principal de trabalho.</p>
+          </article>
+
+          <article class="impact-card interactive-card" data-spotlight data-reveal="up">
+            <span class="impact-label">Projecto em equipa</span>
+            <strong class="impact-number" data-counter="3" data-pad="2">00</strong>
+            <p>Três frentes fortes: interface, lógica de aplicação e modelação de dados.</p>
+          </article>
+
+          <article class="impact-card interactive-card" data-spotlight data-reveal="up">
+            <span class="impact-label">Elementos na equipa</span>
+            <strong class="impact-number" data-counter="5" data-pad="2">00</strong>
+            <p>Sistema de gestão escolar desenvolvido em colaboração com uma equipa de cinco elementos.</p>
+          </article>
+
+          <article class="impact-card interactive-card" data-spotlight data-reveal="up">
+            <span class="impact-label">Conclusão prevista</span>
+            <strong class="impact-number" data-counter="2026">0</strong>
+            <p>Finalização do curso profissional de Programação com foco em desenvolvimento de software.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section specialties" id="especialidades">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+            <span class="section-label">Competências Técnicas</span>
+          <h2>As competências técnicas estão organizadas pelo contexto em que já foram aplicadas.</h2>
+        </div>
+
+        <div class="specialty-grid">
+          <article class="stack-card interactive-card" data-spotlight data-reveal="up">
+            <div class="stack-head">
+              <span class="stack-number">01</span>
+              <div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Construção de interfaces para aplicações e páginas com organização, clareza e semântica.</p>
+              </div>
+            </div>
+
+            <div class="tech-grid">
+              <article class="tech-item">
+                <span class="tech-icon tech-icon--html">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-html"></use>
+                  </svg>
+                </span>
+                <strong>HTML5</strong>
+                <span>Estrutura semântica, organização de conteúdo e base de interfaces web.</span>
+              </article>
+
+              <article class="tech-item">
+                <span class="tech-icon tech-icon--js">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-js"></use>
+                  </svg>
+                </span>
+                <strong>JavaScript</strong>
+                <span>Interactividade, comportamento da interface e suporte à experiência no front-end.</span>
+              </article>
+
+              <article class="tech-item">
+                <span class="tech-icon tech-icon--asp">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-aspnet"></use>
+                  </svg>
+                </span>
+                <strong>ASPX / ASP.NET</strong>
+                <span>Páginas ligadas à lógica de servidor e ao fluxo de aplicações web.</span>
+              </article>
+            </div>
+          </article>
+
+          <article class="stack-card interactive-card" data-spotlight data-reveal="up">
+            <div class="stack-head">
+              <span class="stack-number">02</span>
+              <div>
+                <h3>Back-end e lógica de negócio</h3>
+                <p>Implementação de funcionalidades, regras de negócio e integração entre componentes.</p>
+              </div>
+            </div>
+
+            <div class="tech-grid">
+              <article class="tech-item">
+                <span class="tech-icon tech-icon--csharp">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-csharp"></use>
+                  </svg>
+                </span>
+                <strong>C#</strong>
+                <span>Programação orientada a objectos, lógica de aplicação e desenvolvimento de funcionalidades.</span>
+              </article>
+
+              <article class="tech-item">
+                <span class="tech-icon tech-icon--asp">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-aspnet"></use>
+                  </svg>
+                </span>
+                <strong>ASP.NET Server</strong>
+                <span>Validação no servidor, processamento e ligação entre interface e dados.</span>
+              </article>
+            </div>
+
+            <div class="capability-strip">
+              <span>Regras de negócio</span>
+              <span>Validação</span>
+              <span>Processamento</span>
+              <span>Integração</span>
+            </div>
+          </article>
+
+          <article class="stack-card interactive-card" data-spotlight data-reveal="up">
+            <div class="stack-head">
+              <span class="stack-number">03</span>
+              <div>
+                <h3>Banco de dados e persistência</h3>
+                <p>Estruturação de informação para projectos académicos, relatórios e sistemas internos.</p>
+              </div>
+            </div>
+
+            <div class="tech-grid tech-grid--single">
+              <article class="tech-item tech-item--feature">
+                <span class="tech-icon tech-icon--sql">
+                  <svg viewBox="0 0 64 64" aria-hidden="true">
+                    <use href="#icon-sql"></use>
+                  </svg>
+                </span>
+                <strong>SQL</strong>
+                <span>Consultas, relações entre tabelas, apoio à modelação e leitura estruturada de dados.</span>
+              </article>
+            </div>
+
+            <div class="database-points">
+              <span>Consultas otimizadas</span>
+              <span>Relacionamentos</span>
+              <span>Relatórios</span>
+              <span>SQL Server</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-label">Projectos em destaque</span>
+          <h2>Projectos e experiências que mostram contacto real com desenvolvimento, trabalho em equipa e bases de dados.</h2>
+          <p>
+            Esta secção já usa a tua informação real para reforçar experiência académica, estágio curricular
+            e competências técnicas relevantes para oportunidades de entrada no mercado.
+          </p>
+        </div>
+
+        <article class="project-spotlight interactive-card" data-spotlight data-reveal="up">
+          <div class="project-spotlight__copy">
+            <span class="section-label">Projecto principal</span>
+            <h3>Sistema de Gestão Escolar desenvolvido em equipa com front-end, lógica em C# e integração com SQL Server.</h3>
+            <p>
+              Desenvolvimento de um sistema completo de gestão escolar em equipa de 5 elementos, com
+              funcionalidades para gestão de alunos, turmas e utilizadores, controlo de versões com Git
+              e integração com base de dados SQL Server.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML5</span>
+              <span>JavaScript</span>
+              <span>C#</span>
+              <span>ASP.NET Server</span>
+              <span>SQL</span>
+            </div>
+
+            <div class="project-summary-grid">
+              <article>
+                <strong>Trabalho em equipa</strong>
+                <span>Coordenação entre cinco elementos em ambiente de desenvolvimento estruturado.</span>
+              </article>
+              <article>
+                <strong>Back-end com C# e ASPX</strong>
+                <span>Implementação da lógica de aplicação e das principais funcionalidades do sistema.</span>
+              </article>
+              <article>
+                <strong>Integração com dados</strong>
+                <span>Ligação ao SQL Server para gestão estruturada da informação escolar.</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="project-spotlight__visual">
+            <div class="project-window">
+              <div class="project-window__top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="project-window__body">
+                <aside class="project-window__sidebar">
+                  <span class="sidebar-pill sidebar-pill--active">Dashboard</span>
+                  <span class="sidebar-pill">Alunos</span>
+                  <span class="sidebar-pill">Turmas</span>
+                  <span class="sidebar-pill">Utilizadores</span>
+                </aside>
+
+                <div class="project-window__main">
+                  <div class="project-window__hero">
+                    <div>
+                      <span class="project-window__label">Resumo do projecto</span>
+                      <strong>Organização escolar com leitura clara e estrutura funcional.</strong>
+                    </div>
+                    <span class="project-window__badge">Equipa 5</span>
+                  </div>
+
+                  <div class="project-window__chart">
+                    <span class="chart-bar chart-bar--tall"></span>
+                    <span class="chart-bar chart-bar--mid"></span>
+                    <span class="chart-bar chart-bar--short"></span>
+                    <span class="chart-bar chart-bar--mid"></span>
+                    <span class="chart-bar chart-bar--tall"></span>
+                  </div>
+
+                  <div class="project-window__cards">
+                    <article>
+                      <strong>Funcionalidades</strong>
+                      <span>Gestão de alunos</span>
+                    </article>
+                    <article>
+                      <strong>Base de dados</strong>
+                      <span>SQL Server</span>
+                    </article>
+                    <article>
+                      <strong>Colaboração</strong>
+                      <span>Git e GitHub</span>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card interactive-card" data-spotlight data-reveal="up">
+            <span class="project-card__index">Experiência 01</span>
+            <h3>Estágio curricular</h3>
+            <p>Desenvolvimento e manutenção de soluções de software internas, apoio em testes, debugging e integração de sistemas.</p>
+            <div class="project-card__tags">
+              <span>C#</span>
+              <span>ASPX</span>
+              <span>HTML/CSS</span>
+            </div>
+          </article>
+
+          <article class="project-card interactive-card" data-spotlight data-reveal="up">
+            <span class="project-card__index">Experiência 02</span>
+            <h3>Concepção de bases de dados</h3>
+            <p>Apoio na estruturação de bases de dados, relações entre tabelas e integração com aplicações web.</p>
+            <div class="project-card__tags">
+              <span>SQL Server</span>
+              <span>Modelação</span>
+              <span>Integração</span>
+            </div>
+          </article>
+
+          <article class="project-card interactive-card" data-spotlight data-reveal="up">
+            <span class="project-card__index">Experiência 03</span>
+            <h3>Competências pessoais aplicadas</h3>
+            <p>Resolução de problemas, pensamento analítico, trabalho em equipa e orientação para resultados.</p>
+            <div class="project-card__tags">
+              <span>Aprendizagem</span>
+              <span>Adaptação</span>
+              <span>Colaboração</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="processo">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-label">Forma de trabalho</span>
+          <h2>Uma base de trabalho orientada para aprendizagem contínua, colaboração e execução prática.</h2>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card interactive-card" data-spotlight data-reveal="up">
+            <span class="process-step">01</span>
+            <h3>Análise e resolução de problemas</h3>
+            <p>Capacidade de compreender necessidades, estruturar soluções e evoluir com feedback.</p>
+          </article>
+
+          <article class="process-card interactive-card" data-spotlight data-reveal="up">
+            <span class="process-step">02</span>
+            <h3>Implementação técnica</h3>
+            <p>Aplicação de C#, ASPX, HTML, CSS e SQL Server em funcionalidades e projectos académicos.</p>
+          </article>
+
+          <article class="process-card interactive-card" data-spotlight data-reveal="up">
+            <span class="process-step">03</span>
+            <h3>Trabalho em equipa</h3>
+            <p>Colaboração em ambiente estruturado com controlo de versões, partilha de tarefas e integração.</p>
+          </article>
+
+          <article class="process-card interactive-card" data-spotlight data-reveal="up">
+            <span class="process-step">04</span>
+            <h3>Melhoria contínua</h3>
+            <p>Motivação para aprendizagem constante, adaptação a novas tecnologias e evolução profissional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section showcase" id="entregas">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-label">Áreas de aplicação</span>
+          <h2>O perfil encaixa-se bem em equipas de desenvolvimento, projectos internos e funções de estágio em TI.</h2>
+        </div>
+
+        <div class="showcase-grid">
+          <article class="showcase-card interactive-card" data-spotlight data-reveal="up">
+            <span class="showcase-kicker">Institucional</span>
+            <h3>Aplicações web</h3>
+            <p>Interfaces e funcionalidades para sistemas e páginas com estrutura organizada.</p>
+          </article>
+
+          <article class="showcase-card interactive-card" data-spotlight data-reveal="up">
+            <span class="showcase-kicker">Sistemas</span>
+            <h3>Sistemas internos</h3>
+            <p>Soluções ligadas a processos, gestão de informação e apoio à operação.</p>
+          </article>
+
+          <article class="showcase-card interactive-card" data-spotlight data-reveal="up">
+            <span class="showcase-kicker">Sob medida</span>
+            <h3>Bases de dados</h3>
+            <p>Estruturação e integração de SQL Server em projectos académicos e de estágio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section differentiators" id="diferenciais">
+      <div class="shell">
+        <div class="section-heading" data-reveal="up">
+          <span class="section-label">Diferenciais</span>
+          <h2>Mais do que tecnologia: uma combinação de base técnica, motivação e vontade de crescer.</h2>
+          <p>
+            Estes pontos ajudam a comunicar não só o que já foi feito, mas também o potencial
+            de integração numa equipa profissional em contexto de estágio.
+          </p>
+        </div>
+
+        <div class="differential-grid">
+          <article class="differential-card interactive-card" data-spotlight data-reveal="up">
+            <span class="differential-card__code">A1</span>
+            <h3>Pensamento analítico</h3>
+            <p>Capacidade de analisar problemas, estruturar soluções e aprender rapidamente com a prática.</p>
+            <div class="differential-tags">
+              <span>Análise</span>
+              <span>Problemas</span>
+              <span>Lógica</span>
+            </div>
+          </article>
+
+          <article class="differential-card interactive-card" data-spotlight data-reveal="up">
+            <span class="differential-card__code">B2</span>
+            <h3>Trabalho em equipa</h3>
+            <p>Experiência em colaboração com colegas e utilização de Git para organização do trabalho.</p>
+            <div class="differential-tags">
+              <span>Equipa</span>
+              <span>Git</span>
+              <span>Colaboração</span>
+            </div>
+          </article>
+
+          <article class="differential-card interactive-card" data-spotlight data-reveal="up">
+            <span class="differential-card__code">C3</span>
+            <h3>Aprendizagem contínua</h3>
+            <p>Forte interesse por desenvolvimento de software, evolução técnica e contacto com projectos reais.</p>
+            <div class="differential-tags">
+              <span>Evolução</span>
+              <span>Tecnologia</span>
+              <span>Curiosidade</span>
+            </div>
+          </article>
+
+          <article class="differential-card interactive-card" data-spotlight data-reveal="up">
+            <span class="differential-card__code">D4</span>
+            <h3>Orientação para resultados</h3>
+            <p>Foco em entregar soluções funcionais, aprender no processo e contribuir de forma consistente.</p>
+            <div class="differential-tags">
+              <span>Entrega</span>
+              <span>Compromisso</span>
+              <span>Adaptação</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="shell">
+        <article class="contact-card interactive-card" data-spotlight data-reveal="up">
+          <div class="contact-copy">
+            <span class="section-label">Contacto</span>
+            <h2>Disponível para estágio profissional e oportunidades de entrada na área das Tecnologias de Informação.</h2>
+            <p>
+              Se quiseres analisar o perfil em formato mais simples para recrutamento, a versão ATS
+              está preparada em página própria. O portefólio visual continua aqui para leitura humana.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:auahipolitoipolito@gmail.com">Enviar e-mail</a>
+            <a class="button button-secondary" href="cv-ats.html">Abrir CV ATS</a>
+            <a class="button button-secondary" href="https://github.com/kauahhpt" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="#inicio">Voltar ao topo</a>
+            <span class="contact-note">Sintra, Portugal | +351 935 686 304</span>
+          </div>
+
+          <div class="contact-highlights">
+            <span>Estágio curricular</span>
+            <span>SQL Server</span>
+            <span>C# e ASPX</span>
+            <span>GitHub</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <span>Kauã Hipólito</span>
+      <span>Portefólio visual e CV otimizado para ATS</span>
+      <span>&copy; <span data-year></span></span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
