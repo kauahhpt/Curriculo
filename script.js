@@ -159,32 +159,49 @@ function setupActiveNavigation() {
     return;
   }
 
-  links[0].classList.add("is-active");
+  const setActiveLink = (targetHref) => {
+    links.forEach((link) => {
+      link.classList.toggle("is-active", link.getAttribute("href") === targetHref);
+    });
+  };
+
+  links.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || !href.startsWith("#")) {
+      return;
+    }
+
+    link.addEventListener("click", () => {
+      setActiveLink(href);
+    });
+  });
+
+  setActiveLink("#inicio");
+  const visibleSections = new Map();
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
+        if (entry.isIntersecting) {
+          visibleSections.set(entry.target.id, entry.intersectionRatio);
+        } else {
+          visibleSections.delete(entry.target.id);
         }
-
-        links.forEach((link) => {
-          link.classList.toggle(
-            "is-active",
-            link.getAttribute("href") === `#${entry.target.id}`
-          );
-        });
       });
+
+      const mostVisibleSection = [...visibleSections.entries()].sort((a, b) => b[1] - a[1])[0];
+      if (mostVisibleSection) {
+        setActiveLink(`#${mostVisibleSection[0]}`);
+      }
     },
     {
-      rootMargin: "-35% 0px -50% 0px",
-      threshold: 0.1,
+      rootMargin: "-22% 0px -45% 0px",
+      threshold: [0.12, 0.22, 0.4, 0.6],
     }
   );
 
   sections.forEach((section) => observer.observe(section));
 }
-
 function setupHeroParallax() {
   if (prefersReducedMotion) {
     return;

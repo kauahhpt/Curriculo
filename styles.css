@@ -126,6 +126,10 @@ svg {
   margin: 0 auto;
 }
 
+section[id] {
+  scroll-margin-top: 120px;
+}
+
 .section {
   position: relative;
   padding: 104px 0;
